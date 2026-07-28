@@ -1,14 +1,7 @@
-// ==============================
-// Elements
-// ==============================
-
 const shareBtn = document.querySelector(".share-btn");
 const shareBox = document.querySelector(".share");
 const bottom = document.querySelector(".bottom");
 
-// ==============================
-// Toggle Share
-// ==============================
 
 shareBtn.addEventListener("click", (e) => {
 
@@ -20,9 +13,6 @@ shareBtn.addEventListener("click", (e) => {
 
 });
 
-// ==============================
-// Close When Clicking Outside
-// ==============================
 
 document.addEventListener("click", (e) => {
 
@@ -37,20 +27,12 @@ document.addEventListener("click", (e) => {
 
 });
 
-// ==============================
-// Prevent Closing When Clicking
-// Inside Share Box
-// ==============================
-
 shareBox.addEventListener("click", (e) => {
 
     e.stopPropagation();
 
 });
 
-// ==============================
-// Close On Escape Key
-// ==============================
 
 document.addEventListener("keydown", (e) => {
 
@@ -62,9 +44,6 @@ document.addEventListener("keydown", (e) => {
 
 });
 
-// ==============================
-// Close Function
-// ==============================
 
 function closeShare() {
 
